@@ -1,6 +1,7 @@
 package com.testingwebviews;
 
 import android.app.Application;
+import android.webkit.WebView;
 
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
@@ -40,6 +41,9 @@ public class MainApplication extends Application implements ReactApplication {
   @Override
   public void onCreate() {
     super.onCreate();
+    
+    WebView.setWebContentsDebuggingEnabled(true);
+
     SoLoader.init(this, /* native exopackage */ false);
   }
 }
