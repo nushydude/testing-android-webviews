@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import WebView from 'react-native-webview-crosswalk';
 
 export default class App extends Component {
@@ -7,6 +7,7 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <WebView
+          style={styles.container}
           localhost={false}
           source={{
             uri: 'https://www.google.com',
